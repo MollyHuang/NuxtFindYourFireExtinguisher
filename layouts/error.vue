@@ -1,15 +1,17 @@
 <template>
-  <div>
-my-items
+  <div class="container">
+    <PageNotFound />
   </div>
 </template>
 
 <script>
   export default {
-    layout: 'no-nav'
+    
   }
 </script>
 
 <style scoped>
-
+  .container {
+    padding: 4rem 0;
+  }
 </style>
