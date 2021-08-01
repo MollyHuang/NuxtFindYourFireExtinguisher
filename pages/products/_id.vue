@@ -29,6 +29,7 @@
       <p>
         {{ product.description }}
       </p>
+      <Reviews />
     </div>
   </div>
   <div v-else class="container padding">
@@ -37,7 +38,9 @@
 </template>
 
 <script>
+import Reviews from '~/components/Reviews.vue'
   export default {
+  components: { Reviews },
     computed: {
       product() {
         return this.$store.getters.getProductById(this.$route.params.id)
